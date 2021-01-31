@@ -1,0 +1,9 @@
+html
+    head
+        title Word Preference
+    body
+        form(action="/2", method="post")
+            input(type="text", name="word", value="Write your word")
+            input(type="submit", method="submit", value="Let's GO!")
+        .word
+            h1=word_result

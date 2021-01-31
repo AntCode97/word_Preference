@@ -1,0 +1,9 @@
+html
+    head
+        title Word Preference
+    body
+        form(action="/", method="post")
+            input(type="text", name="word", value="Write your word")
+            input(type="submit", method="submit", value="Let's GO!")
+        .word
+            h1=`SCORE: ${word_result.score}, COMPARATIVE: ${word_result.comparative}, COUNT: ${word_result.count}`
